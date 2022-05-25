@@ -1,23 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import Timer from "./component/Timer"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Timer sec={1000} end={60} start={0}/>
+     
     </div>
   );
 }
